@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary: #091747;
+    --fontcolor:  rgb(39, 39, 39);
+    --gray: #333;
+    --swissclr: red;
+    --card-bg-color: linear-gradient(135deg, rgba(255, 241, 49, 0.692) 0%,rgba(120 120 120/30%) 65%, rgba(50 50 50/30%) 100%);
+    --card-bx-shdw: 6px 6px 12px #1f1f1f,-2px -2px 12px #717172;
+    --btn-bx-shdw: 6px 6px 12px #313131;
+    --brdr-rds: 7.5px;
+    --card-brdr: 2px solid rgba(255, 255, 255, 0.325);
+    --bd-fltr: blur(3.5px);
+    --clr-one: rgba(255, 255, 255, 0.325);
+}
+
+/* RESET */
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+:is(p) {
+    font-family: 'Nunito_Sans', sans-serif;
+}
+
+:is(h1,h2,h3,h4,a,.price) {
+    font-family: 'Roboto_condensed', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #cfcfcf;
+	width: 99vw;
+	height: 90vh;
+}
+header {
+	
+	background-color: var(--card-bg-color);
+	border-radius: var(--brdr-rds);
+	border: var(--card-brdr);
+	backdrop-filter: var(--bd-fltr);
+	box-shadow: var(--card-bx-shdw);
+	width: 100%;
+	text-align: center;
+	justify-content: space-between;
+	margin: 0.5em 0.5em 1.5em 0.5em;
+	padding: 1em;
+}
+nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	text-align: center;
+	text-decoration: none;
+	color: none;
+}
+nav a {
+	text-decoration: none;
+	color: var(--gray);
+	align-self: center;
+}
+main {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	flex-wrap: wrap;
+	width: 100%;
+	height: 100%;
+}
+main h1 {
+	font-size: 2em;
+}
+filter {
+	min-width: 100%;
+}
+select {
+	display: block;
+	color: rgb(34, 34, 34);
+	background: linear-gradient(142.99deg, rgba(217, 217, 217, 0.63) 15.53%, rgba(243, 243, 243, 0.63) 88.19%);
+	box-shadow: 0px 12px 24px -1px rgba(0, 0, 0,0.18);
+	border-color: rgba(7, 4, 14, 0);
+	border-radius: 50px;
+	block-size: 20px;
+	margin: 7px auto;
+	padding: 18px 15px;
+	outline: none;
+	text-align: center;
+	width: fit-content;
+	transition: 0.5s;
+	width: 80%;
+  }
+

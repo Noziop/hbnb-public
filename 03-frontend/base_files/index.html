@@ -9,20 +9,23 @@
 <body>
     <header>
         <nav>
+			<img src="logo.png" alt="logo hbnb">
             <a href="login.html" id="login-link">Login</a>
         </nav>
     </header>
     <main>
+		<h1>Available Places</h1>
         <section id="filter">
-            <label for="country-filter">Filter by Country:</label>
-            <select id="country-filter">
-                <!-- Options will be populated dynamically -->
+            <!--<label for="country-filter">Filter by Country:</label>-->
+            <select id="country-filter" placeholder="Filter by Country">
+                <option value="" selected disabled>Filter by Country</option>
             </select>
         </section>
         <section id="places-list">
             <!-- List of places will be populated dynamically -->
         </section>
     </main>
+	<footer>&copy; 2024 - HBNB EVOLUTION</footer>
     <script src="scripts.js"></script>
 </body>
 </html>
